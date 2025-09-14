@@ -1,0 +1,133 @@
+# Cursor Rules for Full-Stack Project
+
+## General Guidelines
+
+- Follow clean code principles and maintain consistency across all files
+- Use TypeScript for type safety in frontend components
+- Implement proper error handling and validation
+- Write meaningful commit messages and comments
+- Follow RESTful API conventions for backend routes
+- Use semantic versioning for releases
+
+## Code Style
+
+### Frontend (React + TypeScript)
+- Use functional components with hooks
+- Implement proper TypeScript interfaces and types
+- Follow React best practices (avoid unnecessary re-renders, proper key props)
+- Use Tailwind CSS utility classes with consistent naming
+- Organize components into logical folders (components, pages, contexts, utils)
+- Use custom hooks for reusable logic
+- Implement proper error boundaries and loading states
+
+### Backend (Node.js + Express)
+- Use ES6+ features and async/await syntax
+- Implement proper middleware for authentication, validation, and error handling
+- Follow MVC architecture pattern
+- Use proper HTTP status codes and error messages
+- Implement input validation and sanitization
+- Use environment variables for configuration
+- Write modular, testable code
+
+## File Organization
+
+```
+backend/
+├── src/
+│   ├── controllers/     # Business logic
+│   ├── middleware/      # Custom middleware
+│   ├── models/          # Database models
+│   ├── routes/          # API routes
+│   ├── utils/           # Utility functions
+│   └── app.js          # App configuration
+└── server.js           # Server entry point
+
+frontend/
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── contexts/        # React contexts
+│   ├── pages/          # Page components
+│   ├── hooks/          # Custom hooks
+│   ├── types/          # TypeScript type definitions
+│   ├── utils/          # Utility functions
+│   └── App.tsx         # Main app component
+```
+
+## Security Best Practices
+
+- Never store sensitive data in frontend code
+- Use HTTPS in production
+- Implement proper CORS configuration
+- Use helmet.js for security headers
+- Implement rate limiting
+- Validate and sanitize all inputs
+- Use parameterized queries to prevent SQL injection
+- Implement proper JWT token management
+
+## Performance Guidelines
+
+- Implement lazy loading for routes and components
+- Optimize images and assets
+- Use proper caching strategies
+- Minimize bundle size
+- Implement proper database indexing
+- Use compression middleware
+
+## Testing
+
+- Write unit tests for critical business logic
+- Implement integration tests for API endpoints
+- Use meaningful test descriptions
+- Maintain good test coverage
+- Mock external dependencies in tests
+
+## Documentation
+
+- Document API endpoints with proper examples
+- Use JSDoc comments for complex functions
+- Keep README files updated
+- Document environment variables
+- Maintain changelog for releases
+
+## Git Workflow
+
+- Use feature branches for new development
+- Write clear, descriptive commit messages
+- Use conventional commit format when possible
+- Review code before merging
+- Keep branches up to date with main branch
+- Squash commits when appropriate
+
+## Error Handling
+
+- Implement global error handlers
+- Use proper logging for debugging
+- Provide meaningful error messages to users
+- Handle edge cases gracefully
+- Implement proper validation error responses
+
+## Environment Management
+
+- Use different configurations for development, staging, and production
+- Keep sensitive data in environment variables
+- Document all required environment variables
+- Use proper environment variable validation
+
+## Code Quality
+
+- Use ESLint and Prettier for consistent code formatting
+- Implement pre-commit hooks
+- Run automated tests before deployment
+- Use TypeScript strict mode
+- Implement proper logging levels
+
+## API Design
+
+- Follow RESTful conventions
+- Use proper HTTP methods (GET, POST, PUT, DELETE)
+- Implement consistent response formats
+- Use proper status codes
+- Version APIs appropriately
+- Implement proper pagination for list endpoints
+
+Remember: Write code that is easy to read, maintain, and debug. Always consider the developer who will work on this code next (it might be you!)
